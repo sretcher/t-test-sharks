@@ -14,6 +14,7 @@ A t-test is used to make inferences about a population mean of a normal distribu
 
 Since the great white sharks were randomly captured around Bermuda, we will consider the first assumption to be met. In order to see if our data comes from a normal distribution, we will use a histogram and a normal quantile plot.
 
+![histogram](sharks_distribution.png)
 
 
 
