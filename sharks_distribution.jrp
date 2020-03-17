@@ -1,0 +1,51 @@
+﻿New Table( "SHARK",
+	Add Rows( 3 ),
+	New Script(
+		"Source",
+		Open(
+			"C:\Users\sretc\Desktop\R for Data Science\SHARK.csv",
+			columns(
+				New Column( "LENGTH", Numeric, "Continuous", Format( "Best", 12 ) )
+			),
+			Import Settings(
+				End Of Line( CRLF, CR, LF ),
+				End Of Field( Comma, CSV( 1 ) ),
+				Strip Quotes( 0 ),
+				Use Apostrophe as Quotation Mark( 0 ),
+				Use Regional Settings( 0 ),
+				Scan Whole File( 1 ),
+				Treat empty columns as numeric( 0 ),
+				CompressNumericColumns( 0 ),
+				CompressCharacterColumns( 0 ),
+				CompressAllowListCheck( 0 ),
+				Labels( 1 ),
+				Column Names Start( 1 ),
+				Data Starts( 2 ),
+				Lines To Read( "All" ),
+				Year Rule( "20xx" )
+			)
+		)
+	),
+	New Column( "LENGTH",
+		Numeric,
+		"Continuous",
+		Format( "Best", 12 ),
+		Set Values( [24, 20, 22] )
+	)
+) << Run Formulas;
+Distribution(
+	Continuous Distribution(
+		Column( :LENGTH ),
+		Horizontal Layout( 1 ),
+		Vertical( 0 ),
+		Normal Quantile Plot( 1 )
+	),
+	SendToReport(
+		Dispatch(
+			{"LENGTH"},
+			"",
+			Border Box( 3 ),
+			{Set Summary Behavior( "Collapse" )}
+		)
+	)
+);
