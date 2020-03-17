@@ -21,12 +21,15 @@ Looking at the plots above, we can see that the data is from a normal population
 ## Small Sample Hypothesis Test
 
 Ho: u = 21
+
 Ha: u > 21
 
 where u is the true mean length of great white sharks around Bermuda. We are testing whether u is greater than 21 ft with a level of significance of 0.01
 
 
 ## T-Test
+
+![t_test](t_sharks.png)
 
 
 
