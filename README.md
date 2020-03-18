@@ -24,14 +24,14 @@ Ho: u = 21
 
 Ha: u > 21
 
-where u is the true mean length of great white sharks around Bermuda. We are testing whether u is greater than 21 ft with a level of significance of 0.01
+where u is the true mean length of great white sharks around Bermuda. We are testing whether u is greater than 21 ft with a level of significance of 0.05
 
 
 ## T-Test
 
 ![t_test](t_sharks.png)
 
-
+Using the p-value specified in the direction of the alternative hypothesis,  
 
 
 
