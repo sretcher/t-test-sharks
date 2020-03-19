@@ -26,11 +26,11 @@ Ha: u > 21
 
 where u is the true mean length of great white sharks around Bermuda. We are testing whether u is greater than 21 ft with a level of significance of 0.05
 
-![t_test](t_sharks1.png)
+![t_test](t_test2.png)
 
 Using the p-value specified in the direction of the alternative hypothesis, we do not reject the null hypothesis since 0.2389 > 0.05. Using a rejection region, we do not reject the null hypothesis since 0.8660 (our t-statistic) < 2.920 (critical value). 
 
-We do not have enough evidence to prove that the true mean length of great white sharks around Bermuda is more than 21 ft. We are 95% confident that this parameter lies in the interval (17.03172, 26.96828). 
+We do not have enough evidence to prove that the true mean length of great white sharks around Bermuda is more than 21 ft. We are 95% confident that the lowest value our parameter could be is 18.62829 ft. 
 
 
 
