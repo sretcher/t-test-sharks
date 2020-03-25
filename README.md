@@ -53,7 +53,7 @@ t.test(x = sharks$LENGTH,alternative = "greater",mu = 21,conf.level = .95)
 ### 18.62829      Inf
 ### sample estimates:
 ### mean of x 
-       22 
+###    22 
 ```
 
 
