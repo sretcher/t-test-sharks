@@ -33,13 +33,37 @@ Using the p-value specified in the direction of the alternative hypothesis, we d
 We do not have enough evidence to prove that the true mean length of great white sharks around Bermuda is more than 21 ft. We are 95% confident that the lowest value our parameter could be is 18.62829 ft. 
 
 
+## Doing the Test in R
+```
+sharks <- read.csv("SHARK.csv",header = TRUE)
+
+n <- length(sharks$LENGTH)
+
+s <- sd(sharks$LENGTH)
+
+x_bar <- mean(sharks$LENGTH)
 
 
+# Same Histogram and QQplot as Above
+hist(sharks$LENGTH)
+
+qqnorm(sharks$LENGTH)
+qqline(sharks$LENGTH)
 
 
+t.test(x = sharks$LENGTH,alternative = "greater",mu = 21,conf.level = .95)
 
+### One Sample t-test
 
-
+### data:  sharks$LENGTH
+### t = 0.86603, df = 2, p-value = 0.2389
+### alternative hypothesis: true mean is greater than 21
+### 95 percent confidence interval:
+### 18.62829      Inf
+### sample estimates:
+### mean of x 
+       22 
+```
 
 
 
