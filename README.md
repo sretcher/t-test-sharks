@@ -37,19 +37,10 @@ We do not have enough evidence to prove that the true mean length of great white
 ```
 sharks <- read.csv("SHARK.csv",header = TRUE)
 
-n <- length(sharks$LENGTH)
-
-s <- sd(sharks$LENGTH)
-
-x_bar <- mean(sharks$LENGTH)
-
-
 # Same Histogram and QQplot as Above
 hist(sharks$LENGTH)
-
 qqnorm(sharks$LENGTH)
 qqline(sharks$LENGTH)
-
 
 t.test(x = sharks$LENGTH,alternative = "greater",mu = 21,conf.level = .95)
 
