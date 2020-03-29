@@ -18,7 +18,7 @@ Since the great white sharks were randomly captured around Bermuda, we will cons
 
 Looking at the plots above, we can see that the data is from a normal population. The data in the histogram is symmetric and the data points fall close to the line in the normal quantile plot. We also get a nice overview of data from the summary statistics/quantiles table.
 
-## T-Test
+## Small Sample Test of Hypothesis about u Based on A Student's T-Statistic
 
 Ho: u = 21
 
