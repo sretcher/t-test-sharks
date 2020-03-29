@@ -7,7 +7,7 @@ A marine biologist believes that great white sharks off the coast of Bermuda gro
 
 A t-test is used to make inferences about a population mean of a normal distribution with a small sample size. In order to use a t-test, we must check that all assumptions have been met.
 
-## Conditions for Small Sample T-Test
+## Conditions Required for a Valid Small Sample Hypothesis Test for u
 
 1. A random sample from the target population.
 2. The population from which a sample is selected has a normal distribution.
